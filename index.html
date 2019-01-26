@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title></title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="">
-
-<link rel="shortcut icon" href="">
+<head lang="ja">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>SkyWay Handson</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-body
+<div class="videosContainer">
+    <video id="myStream" autoplay muted="true"></video>
+</div>
+
+<div class="myControllerContainer">
+    <p>Your id: <span id="my-id">...</span></p>
+    <form id="make-call">
+        <input type="text" placeholder="Join room..." id="join-room">
+        <button type="submit">Join</button>
+    </form>
+    <div id="end-call">
+        <p>Currently in room <span id="room-id">...</span></p>
+        <button>Leave</button>
+    </div>
+</div>
+
 </body>
 </html>
